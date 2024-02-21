@@ -1,0 +1,66 @@
+npm install express nodemon
+Installer le client HTTP « axios » dans le projet
+npm install axios
+2) Installer globalement le serveur factice « json-server »
+npm install --g json-server
+3) Dans un dossier quelconque, créer learners.json av
+
+body-parser: Middleware de traitement du corps des requêtes, nécessaire pour gérer les opérations de création et de mise à jour (POST et PUT).
+npm install body-parser
+
+npm install nodemon --save-dev
+npm install cors
+
+
+255088116845576195@react-projects
+
+
+json-server --watch learners.json --port 3333
+
+{"learners":[
+    {"id": 1,
+    "nom": "Aminata Sy"
+    },
+    {"id": 2,
+    "nom": "Pascaline Diatta"
+    }
+    ]
+}
+
+
+
+
+
+npm install react-router-dom
+
+
+
+
+
+
+student-manager-system/
+|-- public/
+|-- src/
+|   |-- components/
+
+|   |   |-- user/
+|   |   |   |-- StudentList.js       # Composant pour afficher la liste des étudiants pour les utilisateurs
+|   |   |   |-- StudentItem.js       # Composant pour afficher un élément de la liste des étudiants pour les utilisateurs
+|   |   |   |-- StudentDetail.js     # Composant pour afficher les détails d'un étudiant pour les utilisateurs
+|   |   |
+|   |   |-- admin/
+|   |       |-- AdminStudentList.js  # Composant pour afficher la liste des étudiants pour les administrateurs avec opérations CRUD
+|   |       |-- AdminStudentItem.js  # Composant pour afficher un élément de la liste des étudiants pour les administrateurs
+|   |       |-- AdminStudentDetail.js # Composant pour afficher les détails d'un étudiant pour les administrateurs
+|   |       |-- AdminStudentForm.js  # Composant pour ajouter/modifier un étudiant pour les administrateurs
+|   |
+|   |   |-- shared/                   # Utilisation de "shared" pour les composants partagés
+|   |   |   |-- Header.js             # Composant pour l'en-tête de l'application
+|   |   |   |-- Home.js               # Composant pour la page d'accueil de l'application
+|   |
+|   |-- App.js                       # Point d'entrée de l'application React
+|   |-- index.js                     # Point d'entrée pour le rendu dans le DOM
+|
+|-- server/
+|   |-- db.json                     # Fichier de données JSON pour json-server
+|-- package.json                    # Package principal (scripts, dépendances partagées)
